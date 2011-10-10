@@ -70,11 +70,6 @@
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed">
 	<header id="branding" role="banner">
-			<hgroup>
-				<h1 id="site-title"><span><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></span></h1>
-				<h2 id="site-description"><?php bloginfo( 'description' ); ?></h2>
-			</hgroup>
-
 			<?php
 				// Check to see if the header image has been removed
 				$header_image = get_header_image();
@@ -96,18 +91,46 @@
 			</a>
 			<?php endif; // end check for removed header image ?>
 
-			<?php
-				// Has the text been hidden?
-				if ( 'blank' == get_header_textcolor() ) :
-			?>
-				<div class="only-search<?php if ( ! empty( $header_image ) ) : ?> with-image<?php endif; ?>">
-				<?php get_search_form(); ?>
-				</div>
-			<?php
-				else :
-			?>
-				<?php get_search_form(); ?>
-			<?php endif; ?>
+       			<hgroup>
+                            <table>
+                                <tr>
+                                    <td class="title">
+                                        <h1 id="site-title"><span><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></span></h1>
+                                        <h2 id="site-description"><?php bloginfo( 'description' ); ?></h2>
+                                    </td>
+                                    <td class="search">
+                                    <?php
+                                        // Has the text been hidden?
+                                        if ( 'blank' == get_header_textcolor() ) :
+                                    ?>
+                                        <div class="only-search<?php if ( ! empty( $header_image ) ) : ?> with-image<?php endif; ?>">
+                                    <?php get_search_form(); ?>
+                                        </div>
+                                    <?php
+                                        else :
+                                    ?>
+                                    <?php get_search_form(); ?>
+                                    <?php endif; ?>
+                                    </td>
+                                </tr>
+                                <tr class="search">
+                                    <td>
+                                    <?php
+                                        // Has the text been hidden?
+                                        if ( 'blank' == get_header_textcolor() ) :
+                                    ?>
+                                        <div class="only-search<?php if ( ! empty( $header_image ) ) : ?> with-image<?php endif; ?>">
+                                    <?php get_search_form(); ?>
+                                        </div>
+                                    <?php
+                                        else :
+                                    ?>
+                                    <?php get_search_form(); ?>
+                                    <?php endif; ?>
+                                    </td>
+                                </tr>
+                            </table>
+                        </hgroup>
 
 			<nav id="access" role="navigation">
 				<h3 class="assistive-text"><?php _e( 'Main menu', 'twentyeleven' ); ?></h3>

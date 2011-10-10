@@ -7,3 +7,63 @@ Version: 0.1.0
 */
 
 @import url("../twentyeleven/style.css");
+
+/* Ensure background image behind title area */
+#page {
+    background: none repeat scroll 0 0 transparent;
+    margin: 0em auto;
+}
+#main {
+    background: none repeat scroll 0 0 #FFFFFF;
+}
+#primary {
+    background: none repeat scroll 0 0 #FFFFFF;
+}
+#branding img {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+/* Setup title area with searchform placement */
+#site-title {
+    margin-right: 0px;
+    padding: 1.5em 0 0;
+}
+#site-description {
+    margin: 0 0 1.5em 0;
+}
+#branding {
+    border-top: none;
+}
+#branding #searchform {
+    position: static;
+}
+#branding hgroup table {
+    width: 100%;
+}
+#branding hgroup table td.search {
+    width: 250px;
+}
+#branding hgroup table tr.search {
+    display: none;
+}
+#access {
+    margin: 0 auto 0;
+}
+
+/* Changes applied to page when browser width is reduced */
+@media (max-width: 650px) {
+    	/* Make sure title and search form don't collide */
+        #branding hgroup table td.search {
+            display: none;
+        }
+        #branding hgroup table tr.search {
+            display: block;
+            margin: 0 0 0.75em 0;
+        }
+        #site-description {
+            margin: 0 0 0.75em 0;
+        }
+        #site-title {
+            padding: 1em 0 0;
+        }
+}
