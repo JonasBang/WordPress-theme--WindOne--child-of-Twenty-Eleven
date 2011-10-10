@@ -34,6 +34,9 @@ Version: 0.1.0
 #branding {
     border-top: none;
 }
+#branding #s {
+    background-color: #F9F9F9;
+}
 #branding #searchform {
     position: static;
 }
