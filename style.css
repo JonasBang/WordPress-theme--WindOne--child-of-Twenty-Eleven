@@ -28,8 +28,14 @@ Version: 0.1.0
     margin-right: 0px;
     padding: 1.5em 0 0;
 }
+#site-title a {
+    color: #333333;
+    text-shadow: 2px 2px 1px #DAE1D4;
+}
 #site-description {
     margin: 0 0 1.5em 0;
+    color: #666666;
+    font-size: 16px;
 }
 #branding {
     border-top: none;
@@ -63,10 +69,14 @@ Version: 0.1.0
             display: block;
             margin: 0 0 0.75em 0;
         }
-        #site-description {
-            margin: 0 0 0.75em 0;
-        }
         #site-title {
             padding: 1em 0 0;
+        }
+        #site-title a {
+            text-shadow: 0.5px 0.5px 0.5px #DAE1D4;
+        }
+        #site-description {
+            margin: 0 0 0.75em 0;
+            font-size: 12px;
         }
 }
