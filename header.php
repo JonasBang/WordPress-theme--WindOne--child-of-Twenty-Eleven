@@ -99,34 +99,12 @@
                                         <h2 id="site-description"><?php bloginfo( 'description' ); ?></h2>
                                     </td>
                                     <td class="search">
-                                    <?php
-                                        // Has the text been hidden?
-                                        if ( 'blank' == get_header_textcolor() ) :
-                                    ?>
-                                        <div class="only-search<?php if ( ! empty( $header_image ) ) : ?> with-image<?php endif; ?>">
-                                    <?php get_search_form(); ?>
-                                        </div>
-                                    <?php
-                                        else :
-                                    ?>
-                                    <?php get_search_form(); ?>
-                                    <?php endif; ?>
+                                        <?php get_search_form(); ?>
                                     </td>
                                 </tr>
                                 <tr class="search">
                                     <td>
-                                    <?php
-                                        // Has the text been hidden?
-                                        if ( 'blank' == get_header_textcolor() ) :
-                                    ?>
-                                        <div class="only-search<?php if ( ! empty( $header_image ) ) : ?> with-image<?php endif; ?>">
-                                    <?php get_search_form(); ?>
-                                        </div>
-                                    <?php
-                                        else :
-                                    ?>
-                                    <?php get_search_form(); ?>
-                                    <?php endif; ?>
+                                        <?php get_search_form(); ?>
                                     </td>
                                 </tr>
                             </table>
