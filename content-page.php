@@ -10,7 +10,10 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		<h1 class="entry-title"><?php the_title(); ?></h1>
+        <?php if ( !is_front_page () ) : ?>
+                <h1 class="entry-title"><?php the_title(); ?></h1>
+        <?php endif; ?>
+		
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
