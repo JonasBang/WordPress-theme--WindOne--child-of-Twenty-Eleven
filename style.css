@@ -65,7 +65,7 @@ Version: 0.1.0
 
 /* Menu */
 #access {
-    background: -moz-linear-gradient(#252525, #333333) repeat scroll 0 0 transparent;
+    background: #333333;
     box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.4);
     margin: 0 auto 0;
 }
