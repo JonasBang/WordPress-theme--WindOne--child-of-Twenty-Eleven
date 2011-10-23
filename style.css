@@ -8,22 +8,10 @@ Version: 0.1.0
 
 @import url("../twentyeleven/style.css");
 
-/* Ensure background image behind title area */
+/* Page structure */
 #page {
-    background: none repeat scroll 0 0 transparent;
     margin: 0em auto;
 }
-#main {
-    background: none repeat scroll 0 0 #FFFFFF;
-}
-#primary {
-    background: none repeat scroll 0 0 #FFFFFF;
-}
-#branding img {
-    box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.4);
-}
-
-/* Page structure */
 #content {
     margin: 0 34% 0 5%;
     width: 61%;
@@ -49,7 +37,11 @@ Version: 0.1.0
     font-weight: bold;
 }
 #branding {
+    background: url(./images/bg.gif) repeat fixed 0 0 #FFFFFF;
     border-top: none;
+}
+#branding img {
+    box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.4);
 }
 #branding #s {
     background-color: #F9F9F9;
@@ -110,7 +102,7 @@ Version: 0.1.0
     width: 165px;
 }
 #access ul ul a {
-    background: none repeat scroll 0 0 #333333;
+    background-color: #333333;
     color: #AAAAAA;
     line-height: 1em;
     padding: 15px;
@@ -119,7 +111,7 @@ Version: 0.1.0
     border-top: 1px dotted #AAAAAA;
 }
 #access ul ul *:hover > a {
-    background: none repeat scroll 0 0 #E9E9E9;
+    background-color: #E9E9E9;
 }
 #access ul ul .current_page_item > a,
 #access ul ul .current_page_ancestor > a {
@@ -128,16 +120,16 @@ Version: 0.1.0
 
 /* Content */
 .page-header {
-    background: none repeat scroll 0 0 #E7EAE1;
+    background-color: #E7EAE1;
     padding-left: 10px;
 }
 
 /* Widget */
 #secondary .widget {
-    background: none repeat scroll 0 0 #E7EAE1;
+    background-color: #E7EAE1;
 }
 .widget-title {
-    background: none repeat scroll 0 0 #333333;
+    background-color: #333333;
     color: #FFFFFF;
     font-size: 14px;
     font-weight: bold;
@@ -156,7 +148,7 @@ Version: 0.1.0
 /* Bottom widget area */
 #supplementary {
     padding: 1.5em 5%;
-    background: none repeat scroll 0 0 #333333;
+    background-color: #333333;
 }
 #site-generator {
     display: none;
