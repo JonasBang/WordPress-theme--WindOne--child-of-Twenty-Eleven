@@ -125,6 +125,12 @@ Version: 0.1.0
     font-weight: normal;
 }
 
+/* Content */
+.page-header {
+    background: none repeat scroll 0 0 #E7EAE1;
+    padding-left: 5px;
+}
+
 /* Widget */
 #secondary .widget {
     background: none repeat scroll 0 0 #E7EAE1;
