@@ -23,6 +23,16 @@ Version: 0.1.0
     box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.4);
 }
 
+/* Page structure */
+#content {
+    margin: 0 34% 0 5%;
+    width: 61%;
+}
+#secondary {
+    margin-right: 5%;
+    width: 21.4%;
+}
+
 /* Setup title area with searchform placement */
 #site-title {
     margin-right: 0px;
@@ -45,6 +55,10 @@ Version: 0.1.0
 }
 #branding #searchform {
     position: static;
+    right: 5%;
+}
+#branding hgroup {
+    margin: 0 5%;
 }
 #branding hgroup table {
     width: 100%;
@@ -61,6 +75,9 @@ Version: 0.1.0
     background: -moz-linear-gradient(#252525, #333333) repeat scroll 0 0 transparent;
     box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.4);
     margin: 0 auto 0;
+}
+#access div {
+    margin: 0 5%;
 }
 #access a {
     color: #AAAAAA;
