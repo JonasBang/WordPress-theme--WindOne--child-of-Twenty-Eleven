@@ -146,6 +146,7 @@ Version: 0.1.0
     color: #FFFFFF;
     font-size: 14px;
     font-weight: bold;
+    letter-spacing: 0;
     text-transform: none;
     padding-left: 10px;
 }
