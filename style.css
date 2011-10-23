@@ -124,6 +124,37 @@ Version: 0.1.0
 #access ul ul .current_page_ancestor > a {
     font-weight: normal;
 }
+
+/* Widget */
+#secondary .widget {
+    background: none repeat scroll 0 0 #E7EAE1;
+}
+.widget-title {
+    background: none repeat scroll 0 0 #333333;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: none;
+    padding-left: 10px;
+}
+.widget ul,
+.textwidget {
+    padding: 10px;
+}
+.widget ul li {
+    font-size: 12px;
+    margin-left: 12px;
+}
+
+/* Bottom widget area */
+#supplementary {
+    padding: 1.5em 5%;
+    background: none repeat scroll 0 0 #333333;
+}
+#site-generator {
+    display: none;
+}
+
 /* Changes applied to page when browser width is reduced */
 @media (max-width: 650px) {
     	/* Make sure title and search form don't collide */
