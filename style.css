@@ -46,6 +46,7 @@ Version: 0.1.0
     margin: 0 0 1.5em 0;
     color: #666666;
     font-size: 16px;
+    font-weight: bold;
 }
 #branding {
     border-top: none;
@@ -128,7 +129,7 @@ Version: 0.1.0
 /* Content */
 .page-header {
     background: none repeat scroll 0 0 #E7EAE1;
-    padding-left: 5px;
+    padding-left: 10px;
 }
 
 /* Widget */
@@ -149,7 +150,7 @@ Version: 0.1.0
 }
 .widget ul li {
     font-size: 12px;
-    margin-left: 12px;
+    margin-left: 14px;
 }
 
 /* Bottom widget area */
