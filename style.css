@@ -122,6 +122,19 @@ Version: 0.1.0
 .page-header {
     background-color: #E7EAE1;
     padding-left: 10px;
+    margin-bottom: 1em;
+}
+.page-title {
+    margin: 0;
+}
+.page-header p {
+    color: #666666;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 2.6em;
+    margin: 0;
+    text-transform: uppercase;
 }
 
 /* Widget */
