@@ -163,6 +163,13 @@ Version: 0.1.0
     padding: 1.5em 5%;
     background-color: #333333;
 }
+#supplementary .widget-title {
+    padding: 0;
+}
+#supplementary .widget ul,
+#supplementary .textwidget {
+    padding: 0;
+}
 #site-generator {
     display: none;
 }
