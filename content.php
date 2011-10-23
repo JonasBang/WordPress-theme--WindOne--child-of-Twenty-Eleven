@@ -51,9 +51,9 @@
 				<?php printf( __( '<span class="%1$s">Tagged</span> %2$s', 'twentyeleven' ), 'entry-utility-prep entry-utility-prep-tag-links', $tags_list );
 				$show_sep = true; ?>
 			</span>
-			</div><!-- .entry-meta -->
 			<?php endif; // End if $tags_list ?>
 			<?php endif; // End if 'post' == get_post_type() ?>
+			</div><!-- .entry-meta -->
 
 			<?php if ( comments_open() && ! post_password_required() ) : ?>
 			<div class="comments-link">
