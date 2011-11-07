@@ -138,6 +138,9 @@ Version: 0.1.0
     margin: 0;
     text-transform: uppercase;
 }
+div#comments h2#comments-title {
+    display: none;
+}
 
 /* Widget */
 #secondary .widget {
