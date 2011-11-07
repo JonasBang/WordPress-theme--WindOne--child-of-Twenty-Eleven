@@ -77,7 +77,7 @@ Version: 0.1.0
     line-height: 38px;
     padding: 0 30px 0 15px;
     text-decoration: none;
-    width: 120px;
+    width: 137px;
 }
 #access .current_page_item > a,
 #access .current_page_ancestor > a {
@@ -98,14 +98,14 @@ Version: 0.1.0
 }
 #access ul ul {
     top: auto;
-    width: 165px;
+    width: 182px;
 }
 #access ul ul a {
     background-color: #333333;
     color: #AAAAAA;
     line-height: 1em;
     padding: 15px;
-    width: 135px;
+    width: 152px;
     border-bottom: none;
     border-top: 1px dotted #AAAAAA;
 }
