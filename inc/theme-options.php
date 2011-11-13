@@ -222,29 +222,6 @@ function twentyeleven_theme_options_render_page() {
 
 			<table class="form-table">
 
-				<tr valign="top" class="image-radio-option color-scheme"><th scope="row"><?php _e( 'Color Scheme', 'twentyeleven' ); ?></th>
-					<td>
-						<fieldset><legend class="screen-reader-text"><span><?php _e( 'Color Scheme', 'twentyeleven' ); ?></span></legend>
-						<?php
-							foreach ( twentyeleven_color_schemes() as $scheme ) {
-								?>
-								<div class="layout">
-								<label class="description">
-									<input type="radio" name="twentyeleven_theme_options[color_scheme]" value="<?php echo esc_attr( $scheme['value'] ); ?>" <?php checked( $options['color_scheme'], $scheme['value'] ); ?> />
-									<input type="hidden" id="default-color-<?php echo esc_attr( $scheme['value'] ); ?>" value="<?php echo esc_attr( $scheme['default_link_color'] ); ?>" />
-									<span>
-										<img src="<?php echo esc_url( $scheme['thumbnail'] ); ?>" width="136" height="122" alt="" />
-										<?php echo $scheme['label']; ?>
-									</span>
-								</label>
-								</div>
-								<?php
-							}
-						?>
-						</fieldset>
-					</td>
-				</tr>
-
 				<tr valign="top"><th scope="row"><?php _e( 'Link Color', 'twentyeleven' ); ?></th>
 					<td>
 						<fieldset><legend class="screen-reader-text"><span><?php _e( 'Link Color', 'twentyeleven' ); ?></span></legend>
@@ -258,27 +235,6 @@ function twentyeleven_theme_options_render_page() {
 					</td>
 				</tr>
 
-				<tr valign="top" class="image-radio-option theme-layout"><th scope="row"><?php _e( 'Default Layout', 'twentyeleven' ); ?></th>
-					<td>
-						<fieldset><legend class="screen-reader-text"><span><?php _e( 'Color Scheme', 'twentyeleven' ); ?></span></legend>
-						<?php
-							foreach ( twentyeleven_layouts() as $layout ) {
-								?>
-								<div class="layout">
-								<label class="description">
-									<input type="radio" name="twentyeleven_theme_options[theme_layout]" value="<?php echo esc_attr( $layout['value'] ); ?>" <?php checked( $options['theme_layout'], $layout['value'] ); ?> />
-									<span>
-										<img src="<?php echo esc_url( $layout['thumbnail'] ); ?>" width="136" height="122" alt="" />
-										<?php echo $layout['label']; ?>
-									</span>
-								</label>
-								</div>
-								<?php
-							}
-						?>
-						</fieldset>
-					</td>
-				</tr>
 			</table>
 
 			<?php submit_button(); ?>
