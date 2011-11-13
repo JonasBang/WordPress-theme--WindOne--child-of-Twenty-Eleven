@@ -9,6 +9,9 @@ Version: 0.1.0
 @import url("../twentyeleven/style.css");
 
 /* Page structure */
+body {
+    background: url(./images/bg.gif) repeat-x fixed 0 0 #FFFFFF;
+}
 #page {
     margin: 0em auto;
 }
@@ -40,7 +43,7 @@ Version: 0.1.0
     font-weight: bold;
 }
 #branding {
-    background: url(./images/bg.gif) repeat fixed 0 0 #FFFFFF;
+    background: url(./images/bg.gif) repeat-x fixed 0 0 #FFFFFF;
     border-top: none;
 }
 #branding img {
