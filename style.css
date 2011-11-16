@@ -47,7 +47,7 @@ body {
     border-top: none;
 }
 #branding img {
-    box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.4);
 }
 #branding #s {
     background-color: #F9F9F9;
@@ -73,6 +73,7 @@ body {
 #access {
     background: #333333;
     margin: 0 auto 0;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.4);
 }
 #access div {
     margin: 0 5%;
