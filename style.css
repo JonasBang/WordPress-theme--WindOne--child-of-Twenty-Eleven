@@ -107,21 +107,28 @@ body {
     line-height: 16px;
     padding-bottom: 15px;
 }
+#access li:hover > a,
+#access a:focus {
+    background: url(./images/menu_bg.png) repeat-x #E5E5E5;
+}
 #access ul ul {
     top: auto;
-    width: 182px;
+    width: 180px;
+    border-bottom: 1px solid #333333;
+    border-left: 1px solid #333333;
+    border-right: 1px solid #333333;
 }
 #access ul ul a {
     background-color: #333333;
     color: #AAAAAA;
     line-height: 1em;
     padding: 15px;
-    width: 152px;
+    width: 150px;
     border-bottom: none;
-    border-top: 1px dotted #AAAAAA;
+    border-top: 1px dotted #666666;
 }
 #access ul ul *:hover > a {
-    background-color: #E9E9E9;
+    background-color: #E5E5E5;
 }
 #access ul ul .current_page_item > a,
 #access ul ul .current_page_ancestor > a {
