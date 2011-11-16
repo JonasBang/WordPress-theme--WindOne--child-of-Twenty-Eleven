@@ -47,7 +47,9 @@ body {
     border-top: none;
 }
 #branding img {
-    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 5px 1px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 5px 1px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 5px 1px;
 }
 #branding #s {
     background-color: #F9F9F9;
@@ -73,7 +75,9 @@ body {
 #access {
     background: #333333;
     margin: 0 auto 0;
-    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 5px 1px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 5px 1px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 5px 1px;
 }
 #access div {
     margin: 0 5%;
