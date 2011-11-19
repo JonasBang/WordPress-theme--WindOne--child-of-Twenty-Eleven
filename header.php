@@ -22,6 +22,7 @@
 <html <?php language_attributes(); ?>>
 <!--<![endif]-->
 <head>
+<link rel="shortcut icon" href="<?php bloginfo('stylesheet_directory'); ?>/favicon.ico" />
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <meta name="viewport" content="width=device-width" />
 <title><?php
