@@ -154,6 +154,12 @@ body {
 div#comments h2#comments-title {
     display: none;
 }
+.hentry {
+    border-bottom: none;
+}
+.post {
+    border-bottom: 1px solid #DDDDDD;
+}
 
 /* Widget */
 #secondary .widget {
