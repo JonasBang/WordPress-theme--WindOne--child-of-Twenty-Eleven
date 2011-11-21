@@ -179,8 +179,11 @@ div#comments h2#comments-title {
 
 /* Bottom widget area */
 #supplementary {
-    padding: 1.5em 5%;
+    padding: 1em 5%;
     background-color: #333333;
+}
+#supplementary .widget {
+    margin: 0;
 }
 #supplementary .widget-title {
     padding: 0;
@@ -190,9 +193,12 @@ div#comments h2#comments-title {
     padding: 0;
 }
 #site-generator {
-    display: none;
+    background: none repeat scroll 0 0 #333333;
+    border-top: none;
+    color: #777777;
+    padding: 1em 5%;
+    text-align: left;
 }
-
 /* Changes applied to page when browser width is reduced */
 @media (max-width: 650px) {
     	/* Make sure title and search form don't collide */
