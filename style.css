@@ -197,6 +197,7 @@ div#comments h2#comments-title {
 #supplementary .widget ul,
 #supplementary .textwidget {
     padding: 0;
+    color: #AAAAAA;
 }
 #site-generator {
     background: none repeat scroll 0 0 #333333;
