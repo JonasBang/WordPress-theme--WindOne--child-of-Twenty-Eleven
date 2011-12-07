@@ -36,11 +36,17 @@ body {
     color: #333333;
     text-shadow: 2px 2px 1px #DAE1D4;
 }
+#site-title a:hover,
+#site-title a:focus,
+#site-title a:active {
+    color: inherit;
+}
 #site-description {
     margin: 0 0 1.5em 0;
-    color: #666666;
+    color: #555555;
     font-size: 16px;
     font-weight: bold;
+    font-style: italic;
 }
 #branding {
     background: url(./images/bg.gif) repeat-x fixed 0 0 #FFFFFF;
