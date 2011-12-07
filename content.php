@@ -34,19 +34,6 @@
 				$show_sep = true; ?>
 			</span>
 			<?php endif; // End if categories ?>
-
-			<?php
-				/* translators: used between list items, there is a space after the comma */
-				$tags_list = get_the_tag_list( '', __( ', ', 'twentyeleven' ) );
-				if ( $tags_list ):
-				if ( $show_sep ) : ?>
-			<span class="sep"> | </span>
-				<?php endif; // End if $show_sep ?>
-			<span class="tag-links">
-				<?php printf( __( '<span class="%1$s">Tagged</span> %2$s', 'twentyeleven' ), 'entry-utility-prep entry-utility-prep-tag-links', $tags_list );
-				$show_sep = true; ?>
-			</span>
-			<?php endif; // End if $tags_list ?>
 			</div><!-- .entry-meta -->
 			<?php endif; // End if 'post' == get_post_type() ?>
 
@@ -69,6 +56,18 @@
 		<?php endif; ?>
 
 		<footer class="entry-meta">
+			<?php if ( 'post' == get_post_type() ) : // Hide category and tag text for pages on Search ?>
+			<?php
+				/* translators: used between list items, there is a space after the comma */
+				$tags_list = get_the_tag_list( '', __( ', ', 'twentyeleven' ) );
+				if ( $tags_list ): ?>
+			<span class="tag-links">
+				<?php printf( __( '<span class="%1$s">Tagged</span> %2$s', 'twentyeleven' ), 'entry-utility-prep entry-utility-prep-tag-links', $tags_list );
+				$show_sep = true; ?>
+			</span>
+			<?php endif; // End if $tags_list ?>
+			<?php endif; // End if 'post' == get_post_type() ?>
+
 			<?php edit_post_link( __( 'Edit', 'twentyeleven' ), '<span class="edit-link">', '</span>' ); ?>
 		</footer><!-- #entry-meta -->
 	</article><!-- #post-<?php the_ID(); ?> -->
